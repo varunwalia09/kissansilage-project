@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* body{
+   
+    background-image: url('../public/assests/logo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+  } */
+.navbar li a {
+    color: rgb(0, 0, 0); /* Set the text color to orange-red */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar li a:hover {
+    color: #ff4d01; /* Change text color on hover */
+}
+.top {
+    background-color:#2e8503;
+     margin-top: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly horizontally */
+    align-items: center; /* Vertically align items in the center */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 20px;
+    border-radius: 2px solid black;
+   /* margin: 0px;
+    float: right; */
+   
+    
+  }
+  
+/* Navbar start */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0; 
+    gap: 2px; 
+   
+  }
+  .navbar li::first-letter{
+    color: gold;
+    font-weight: bold;
+    
+  }
+  /* fade in and color navbar */
+   .navbar li {
+    margin-right: 40px; 
+    /* color: orangered; */
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: 0.3s;/* Smooth transition for hover effect */
+    cursor: pointer;
+    border-radius: 5% ; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
+    overflow: hidden; 
+   border: 2px solid green;
+  }
+  .navbar li:hover{
+    border: 5px solid darkgreen;
+  }
+  
+.navbar li a.active,
+.navbar li a:hover {
+  color:blue;
+  border-bottom: 0.2rem solid #013cff;
+  padding: 0.5rem 0;
+}
+.logo :hover{
+  .navbar li:hover{
+    border: 5px solid darkgreen;
+  }
+}
+.logo {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color:rgb(5, 5, 5); /* Text color for the logo */
+  font-size: 25px; /* Adjust the font size as needed */
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 1;
+    transition: 0.3s;/* Smooth transition for hover effect */
+    cursor: pointer;
+    border-radius: 5% ; /* Rounded corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
+    overflow: hidden; 
+   border: 2px solid green;
+   margin-left: 30px;
+}
+.logo span::first-letter{
+  color: gold;
+}
+/* Style for the first letter of the text in the span with class 'k' */
+
+
+/* .logo:hover{
+ border:2px solid #04369b;
+} */
+.top .logo {
+  mix-blend-mode: normal; /* Adjust blend mode as needed */
+  animation: bounce 03s alternate infinite; /* Apply a continuous bouncing animation */
+  transition: transform 0.3s; /* Smooth transition for transform property */
+  transform: translateY(-10px); /* Initial position, move the image up by 10px */
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Reset the image to its original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move the image up by 10px */
+  }
+}
+/* navbar end */
+
+/* home page :start */
+
+/* .home .nxjimage img:hover {
+  border: 1px solid orangered;
+  
+ } 
+
+ .home .nxjimage img{
+  margin: 4rem;
+  width: 35rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  cursor: pointer;
+  
+  padding: 10px;
+} */
+
+/* Home page images */
+.center-logo img{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
+
+  padding: 2px;
+  cursor: pointer;
+}
+
+.center-text{
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  text-transform: none;
+  color:green; 
+  flex-wrap: wrap;
+  gap: 2rem;
+  line-height: 40px;
+  margin-left: 10vh;
+}
+
+.image-wrapper {
+  margin: 40px;
+margin-right: 40px;
+  /* padding: 2px; */
+  display: inline-block;
+  width: 20%; /* Adjust width as needed */
+  height: auto;
+  cursor: pointer;
+  border-radius: 5% ; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
+  transition: 0.3s; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure image stays within bounds */
+  /* transform: skew(-10deg); */
+}
+
+.image-wrapper:hover{
+  border: 1px solid orangered;
+}
+/* Specific styles for each image wrapper */
+
+
+/* Home page images Hover effect for image wrappers */
+.image-wrapper:hover img {
+  transform: scale(1.08); /* Slightly scale up the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+}
+
+/* home 1 bottom side images */
+/* Center the heading h1 */
+
+.home2 {
+  text-align: center; /* Center the heading */
+  margin-top: 10px;
+}
+
+/* Style the list item li */
+.home1 li {
+  list-style-type: none; /* Remove the default bullet point */
+  padding-left: 50px; /* Add left padding to accommodate the check mark */
+  position: relative; /* Set position to relative for positioning the check mark */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Add a Unicode check mark at the beginning of the list item */
+.home1 li::before {
+  padding-left: 20px;
+  content: '\2713'; /* Unicode character for check mark */
+  position: absolute; /* Position it absolutely */
+  left: 0; /* Place it at the start of the list item */
+  color: green;
+  font-weight: bold;
+}
+.home3{
+  padding-left: 60px;
+  margin: 5px;
+}
+.home4{
+  padding-left: 60px;
+  margin: 10px;
+}
+/* Add line space between list items in the home4 class */
+/* CSS rule to create space between lines */
+
+
+
+.para p{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.para span {
+  color: green; /* Change text color to green */
+}
+
+
+/* About section li part */
+.li-li > li {
+  padding-bottom: 10px; /* Add space between list items */
+  font-size: 1.2rem; /* Set the font size as desired */
+  color: #000000; /* Set the text color */
+  line-height: 1.5; /* Increase the line height for better readability */
+  list-style-type: none; /* Remove the default list markers */
+  position: relative; /* To allow for absolute positioning of the tick mark */
+  padding-left: 20px; /* Add left padding to create space for the tick mark */
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+/* Add a custom tick mark as a background image */
+.li-li > li::before {
+  content: "\2713"; /* Unicode character for a check mark (✓) */
+  position: absolute;
+  left: 0; /* Position the check mark to the left of the text */
+  color: green; /* Set the color of the check mark */
+  font-weight: bold; /* Make the check mark bold */
+}
+.abt-hed{
+  text-align: center;
+}
+.p-para{
+  text-align: center;
+  font-size: 20px;
+  color: #2e8503;
+  font-weight:bold ;
+  margin-top: 5px;
+}
+.left-hed{
+  justify-content: flex-start;
+  margin-left: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+/* about image */
+.about-img{
+  margin: 2rem;
+  padding: 5px;
+  /* display: inline-block; */
+  width: 30%; /* Adjust width as needed */
+  height: auto;
+  cursor: pointer;
+  border-radius: 10% ; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
+  transition: 0.3s; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure image stays within bounds */
+  border: 2px solid green;
+}
+.about-img:hover{
+  border: 5px solid green;
+}
+.abt-center{
+  text-align: center;
+  padding: 10px; /* Add padding around the text */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  line-height: 1.5; /* Set line height for better readability */
+
+}
+.abt-img{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5%;
+  box-shadow:0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */ ;
+  transition: 0.3s; /* Smooth transition for hover effect */
+  overflow: hidden; /* Ensure image stays within bounds */
+  
+}
+/* About end */
+
+
+
+/* Contact page details */
+.contact-container {
+  max-width: 600px;
+  /* margin: auto; */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+/* Form and input field styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="mobile"],
+textarea {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049; 
+  
+}
+.cont-img{
+/* margin-bottom: 80%;
+align-items: center;
+justify-content: center;
+text-align: center; */
+float: right;
+ 
+  
+ 
+}
+.cont-img img {
+  /* Ensure the image does not overflow its container */
+ margin-top: 20px;
+  margin-right: 120px;
+  padding: 5px;
+  display: inline-block;
+  /* Adjust width as needed */
+  height: auto;
+  cursor: pointer;
+  border-radius: 5% ; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Shadow effect */
+  transition: 0.3s; /* Smooth transition for hover effect */
+  overflow: hidden; 
+  border: 2px solid green;
+}
+.cont-img img:hover{
+  border: 5px solid green;
+}
+/* Styles for social media icons */
+.social-icons {
+  display: flex;
+  gap: 10px; /* Adjust this value to increase or decrease the gap between icons */
+  justify-content: center; /* Center-align the icons */
+}
+
+
+.social-icons .social-icon {
+  
+  transition: color 0.3s; /* Add a transition effect to color changes */
+}
+
+
+.facebook{
+  color: #0077b5;
+}
+.twitter{
+  color: #0077b5;
+ 
+}
+.instagram{
+  color: red;
+}
+.linkedin{
+  color: #0077b5;
+}
+.address{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  padding: 40px;
+}
+.address {
+  animation: zoomIn 3s ease-in-out forwards; /* Apply the zoomIn animation */
+  animation-delay: 1s;
+}
+/* Animation for zooming in */
+@keyframes zoomIn {
+  from {
+    transform: scale(0); /* Start from no scale (invisible) */
+  }
+  to {
+    transform: scale(1); /* Zoom in to normal size */
+  }
+}
+
+.address1{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.address2{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.address3{
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+/* .social-icons .social-icon:hover {
+  color: #0077b5; 
+} */
+
+/* Contact page End */
+
+/* footer start */
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  position: fixed;/* Fix the footer at the bottom of the page */
+  bottom: 0; /* Place the footer at the bottom */
+  left: 0; /* Align the footer to the left edge */
+  /* z-index: 1000; */
+   /* Set a high z-index to bring the footer above other content */
+  background-color: green;
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.red {
+  color: red;
+}
+
+.footer p:hover {
+  text-decoration: underline black;
+  color: blue; /* Change text color to blue and add underline on hover */
+}
+
+.space {
+  padding-left: 10px;
+}
+
+
+
+/* footer end */
