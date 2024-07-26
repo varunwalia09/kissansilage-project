@@ -7,7 +7,7 @@ function Footer(){
           <p>
             <b>Copyright 2024 All Right Reserved </b>
             <br />
-            <b className="space"> <span className='red'>❤ </span> Create By Varun Walia</b>
+            <b className="space"> <span className='red'>❤ </span> Created By Varun Walia</b>
           </p>
         </footer>
     )
